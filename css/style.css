@@ -1,0 +1,184 @@
+
+/* step : 4 we import text style for footer */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* step 14 : here we apply variable from google which is used to change the whole website color and check it */
+:root {
+    --main-bg-color: #2874f0;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* step 6 : decorate header */
+
+header{
+    
+    background-color: var(--main-bg-color);
+
+    /* step 9 : font-family  */
+    font-family: 'Lato', sans-serif;
+       
+    
+}
+
+/* step 16 : make nav bar as a flex box because to set logo inline */
+nav{
+    display: flex;
+    
+   
+}
+
+/* step 17 : give .logo class as flex and give align-items as center */
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* step 18 : now give logo width and padding */
+
+.logo img{
+    width: 88px;
+    padding: 0px 25px ;
+
+}
+
+/* step 10 : we make nav ul as a flex box for inline header */
+nav ul{
+    display:flex;
+    /* step 11 : flex start is for respondiveness....pakad k rakhega */
+    justify-content: flex-start;
+
+    align-items: center;
+
+    /* step 12 : we give ul height...because ye center nahi ho raha tha header k height par */
+
+    height: 58px;
+
+}
+
+
+/* step 7 : decorate nav ul li...nav k ander k ul hai and jo uske ander li hai usko decorate karo */
+
+nav ul li{
+    list-style: none;
+
+    /* step 13 : give padding  */
+    padding: 0px 23px;
+   
+    
+}
+
+
+
+/* step 8 nav ul li a  decorate */
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+
+
+/* step 22 : when hover on home it bold */
+nav ul li a:hover{
+    /* color: rgb(143, 134, 174); */
+    font-weight: bolder;
+    /* font-size: 150%; */
+    /* font-style: oblique; */
+}
+
+/* step 24 : decorate search bar and input inside .search */
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    /* width: 450px; */
+
+    /* step 41 : make search input size in vw for responsive */
+
+    width: 30vw;
+    height: 27px;
+    border-radius: 2px;
+    margin: 0 16px 0 56px;
+    padding: 0 10px;
+}
+
+.search button{
+    font-family: 'Lato', sans-serif;
+}
+
+/* step 20 : decorate container */
+
+.container{
+
+    /* step 21 : responsiveness ka main funda */
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+/* step 27 : make slider image center */
+.slider{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 12px auto;
+    /* step 40 :  we make its over flow hidden for responsiveness */
+    overflow: hidden;
+}
+
+/* step 29 : card */
+.card{
+    /* background-color: var(--main-bg-color);
+    border: 2px solid red; */
+    max-width: 91vw;
+    margin: 37px auto;
+}
+
+/* step 31 : now we add font style in card h2 */
+.card h2{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 0px 0px 20px;
+}
+
+/* step 37 : decorate cards class to align card-item box  */
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+    /* width: 11vw; */
+
+}
+
+
+/* step 3 : decorate footer */
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+  
+
+    color: white;
+
+    font-family: 'Lato', sans-serif;
+}
+
+
+

@@ -1,0 +1,55 @@
+/* 1000 width tak sab thik hai but uske baad dikkat aarahi hai  */
+/* step 42 : lets add media query */
+
+@media screen and (max-width:1000px)  {
+  
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .logo{
+        justify-content: center;
+        /* margin: 12px 0; */
+        margin: 12px 0 4px 0;
+    
+    }
+
+    nav ul{
+        justify-content: center;
+        margin: 2px 0 5px 0;
+        height: 45px;
+    }
+
+    .search{
+        justify-content: center;
+    }
+
+    .search input{
+        margin: 0 12px 7px 0;
+    }
+
+    .search button{
+        margin: 0 0 7px 0px;
+    }
+
+    .slider{
+        height: 23vh;
+       
+    }
+
+    .cards{
+        overflow: scroll;
+    }
+
+    .card-item img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h2{
+        font-size: 19px;
+        padding: 0;
+    }
+
+}
